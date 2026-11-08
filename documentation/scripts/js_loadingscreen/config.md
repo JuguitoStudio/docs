@@ -39,42 +39,56 @@ Configuración ultra-limpia sin duplicaciones:
 
 ```lua
 Config.Background = {
-    -- Modos disponibles: 'local' | 'url' | 'images'
-    Mode = 'local',
+    -- Options: 'video' | 'images'
+    Mode = 'video',
 
-    -- [1] Modo 'local' (Recomendado): Archivo dentro de web/assets/video/
-    LocalVideo = 'assets/video/video.mp4',
+    -- [Mode: 'video'] Local video file path inside web/ folder
+    Video = 'assets/video/video.mp4',
 
-    -- [2] Modo 'url': Admite CUALQUIER URL completa de internet
-    -- Si pegas un enlace de YouTube -> Carga automáticamente el reproductor de YouTube
-    -- Si pegas un enlace directo a video (.mp4/.webm) -> Carga el video en streaming
-    UrlVideo = 'https://www.youtube.com/watch?v=qvPrcZQU4Iw',
+    -- [Mode: 'video'] Enable video audio:
+    -- true  -> Plays audio directly from the video. Bottom player controls volume/mute/pause.
+    --          The background music playlist is disabled automatically to avoid audio clashes.
+    -- false -> Keeps the video muted so the Config.Audio playlist plays instead.
+    EnableAudio = false,
 
-    -- [3] Modo 'images': Carrusel de imágenes
+    -- [Mode: 'images'] Image slideshow list (local paths or external URLs)
     Images = {
-        'assets/images/fondo1.png',
-        'https://miservidor.com/fondo2.jpg',
+        'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1920&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1920&auto=format&fit=crop',
     },
-    SlideshowInterval = 6500,
+
+    -- [Mode: 'images'] Slideshow rotation interval in seconds
+    Interval = 6,
 }
 ```
 
-> ⚡ **Recomendación:** `local` ofrece la mayor fluidez y calidad de imagen a 60 FPS, sin depender de la conexión a internet ni de bloqueos de YouTube.
-
 ---
 
-## 🎵 Reproductor de Música (`Config.Audio`)
+## 🎵 Music Player (`Config.Audio`)
 
 ```lua
 Config.Audio = {
-    Enabled       = true,  -- Habilitar reproductor de música
-    Autoplay      = true,  -- Iniciar música automáticamente al entrar
-    DefaultVolume = 25,    -- Volumen inicial (0 a 100)
-    Playlist      = {
+    -- Enable background music player
+    Enabled       = true,
+
+    -- Automatically start playing when loading screen opens
+    Autoplay      = true,
+
+    -- Default volume percentage (0 to 100)
+    DefaultVolume = 30,
+
+    -- Local song playlist: Add as many local audio tracks as you want
+    -- Audio files should be placed inside web/assets/audio/
+    Playlist = {
         {
-            Title  = 'Midnight City (Synthwave)',
-            Artist = 'Juguito Beats',
-            File   = 'https://assets.mixkit.co/music/preview/mixkit-game-level-music-689.mp3',
+            Title  = 'Synthwave Chill',
+            Artist = 'Juguito Studio',
+            File   = 'assets/audio/song.mp3',
+        },
+        {
+            Title  = 'Night Drive',
+            Artist = 'Retro Wave',
+            File   = 'assets/audio/song.mp3',
         },
     },
 }
