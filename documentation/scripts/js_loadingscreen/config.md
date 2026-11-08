@@ -35,23 +35,22 @@ Config.Debug = false          -- Logs de depuración en consola
 
 ## 🎬 Fondos & Vídeo (`Config.Background`)
 
-Elige el modo deseado en `Mode`. Cada modo tiene su parámetro dedicado, evitando duplicaciones:
+Configuración ultra-limpia sin duplicaciones:
 
 ```lua
 Config.Background = {
-    -- Modos disponibles: 'local_video' | 'url_video' | 'youtube' | 'images'
-    Mode = 'local_video',
+    -- Modos disponibles: 'local' | 'url' | 'images'
+    Mode = 'local',
 
-    -- [1] Modo 'local_video' (Recomendado): Coloca tu .mp4 en web/assets/video/
+    -- [1] Modo 'local' (Recomendado): Archivo dentro de web/assets/video/
     LocalVideo = 'assets/video/video.mp4',
 
-    -- [2] Modo 'url_video': Enlace directo web a un video .mp4 o .webm
-    UrlVideo = 'https://miservidor.com/trailer.mp4',
+    -- [2] Modo 'url': Admite CUALQUIER URL completa de internet
+    -- Si pegas un enlace de YouTube -> Carga automáticamente el reproductor de YouTube
+    -- Si pegas un enlace directo a video (.mp4/.webm) -> Carga el video en streaming
+    UrlVideo = 'https://www.youtube.com/watch?v=qvPrcZQU4Iw',
 
-    -- [3] Modo 'youtube': Enlace o ID de YouTube
-    Youtube = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-
-    -- [4] Modo 'images': Carrusel de imágenes
+    -- [3] Modo 'images': Carrusel de imágenes
     Images = {
         'assets/images/fondo1.png',
         'https://miservidor.com/fondo2.jpg',
@@ -60,13 +59,7 @@ Config.Background = {
 }
 ```
 
-> ⚡ **Recomendación:** `local_video` ofrece la mayor fluidez y calidad de imagen a 60 FPS, sin depender de la conexión a internet ni de bloqueos de YouTube.
-    Images            = {
-        'assets/images/fondo1.png',
-        'https://tuservidor.com/fondo2.jpg',
-    },
-}
-```
+> ⚡ **Recomendación:** `local` ofrece la mayor fluidez y calidad de imagen a 60 FPS, sin depender de la conexión a internet ni de bloqueos de YouTube.
 
 ---
 
