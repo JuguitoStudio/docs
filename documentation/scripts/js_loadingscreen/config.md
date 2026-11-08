@@ -33,26 +33,58 @@ Config.Debug = false          -- Logs de depuración en consola
 
 ---
 
-## 🎬 Fondos & Vídeo de YouTube (`Config.Backgrounds`)
+## 🎬 Fondos & Vídeo (`Config.Backgrounds`)
 
-### Para usar un vídeo de YouTube a pantalla completa:
+El script admite cualquier fuente de vídeo de manera automática:
+
+### 1. Archivo de vídeo local (Recomendado):
+Coloca tu archivo `.mp4` o `.webm` en la carpeta `web/assets/video/` (por ejemplo `web/assets/video/video.mp4`):
 
 ```lua
 Config.Backgrounds = {
-    Type           = 'video',         -- Establece 'video'
-    YoutubeVideoId = 'dQw4w9WgXcQ',   -- El ID de tu video de YouTube
+    Mode   = 'video',
+    Source = 'assets/video/video.mp4',
 }
 ```
 
-> 📌 **¿Dónde encuentro el ID de YouTube?**
-> En la URL `https://www.youtube.com/watch?v=dQw4w9WgXcQ`, el ID es la parte final: `dQw4w9WgXcQ`.
+> ⚡ **Ventaja:** Carga instantánea, sin anuncios, a 60 FPS, sin lag y sin depender de bloqueos de YouTube.
 
-### Para usar un carrusel de imágenes:
+### 2. Enlace web directo a vídeo (.mp4 / .webm):
+Puedes usar cualquier enlace directo a un archivo de vídeo alojado en tu web, Discord CDN, etc.:
 
 ```lua
 Config.Backgrounds = {
-    Type              = 'slideshow',  -- Establece 'slideshow'
-    SlideshowInterval = 6500,         -- Tiempo en ms entre cada cambio de imagen
+    Mode   = 'video',
+    Source = 'https://miservidor.com/trailer.mp4',
+}
+```
+
+### 3. Enlace o ID de YouTube:
+Pega el enlace completo o solo el ID del vídeo:
+
+```lua
+Config.Backgrounds = {
+    Mode   = 'video',
+    Source = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', -- O solo 'dQw4w9WgXcQ'
+}
+```
+
+> ⚠️ **Nota sobre YouTube:** Algunos creadores de YouTube bloquean la reproducción de sus vídeos en sitios web de terceros (*Error 150*). Si te sale el mensaje *"Este video no está disponible"*, es porque el dueño del vídeo desactivó la inserción externa. Te recomendamos usar un archivo local `.mp4`.
+
+---
+
+### 4. Carrusel de imágenes (Slideshow):
+
+```lua
+Config.Backgrounds = {
+    Mode              = 'slideshow',
+    SlideshowInterval = 6500,
+    Images            = {
+        'assets/images/fondo1.png',
+        'https://miservidor.com/fondo2.jpg',
+    },
+}
+```
     Images            = {
         'assets/images/fondo1.png',
         'https://tuservidor.com/fondo2.jpg',
