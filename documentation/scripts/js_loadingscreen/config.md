@@ -33,58 +33,34 @@ Config.Debug = false          -- Logs de depuración en consola
 
 ---
 
-## 🎬 Fondos & Vídeo (`Config.Backgrounds`)
+## 🎬 Fondos & Vídeo (`Config.Background`)
 
-El script admite cualquier fuente de vídeo de manera automática:
-
-### 1. Archivo de vídeo local (Recomendado):
-Coloca tu archivo `.mp4` o `.webm` en la carpeta `web/assets/video/` (por ejemplo `web/assets/video/video.mp4`):
+Elige el modo deseado en `Mode`. Cada modo tiene su parámetro dedicado, evitando duplicaciones:
 
 ```lua
-Config.Backgrounds = {
-    Mode   = 'video',
-    Source = 'assets/video/video.mp4',
-}
-```
+Config.Background = {
+    -- Modos disponibles: 'local_video' | 'url_video' | 'youtube' | 'images'
+    Mode = 'local_video',
 
-> ⚡ **Ventaja:** Carga instantánea, sin anuncios, a 60 FPS, sin lag y sin depender de bloqueos de YouTube.
+    -- [1] Modo 'local_video' (Recomendado): Coloca tu .mp4 en web/assets/video/
+    LocalVideo = 'assets/video/video.mp4',
 
-### 2. Enlace web directo a vídeo (.mp4 / .webm):
-Puedes usar cualquier enlace directo a un archivo de vídeo alojado en tu web, Discord CDN, etc.:
+    -- [2] Modo 'url_video': Enlace directo web a un video .mp4 o .webm
+    UrlVideo = 'https://miservidor.com/trailer.mp4',
 
-```lua
-Config.Backgrounds = {
-    Mode   = 'video',
-    Source = 'https://miservidor.com/trailer.mp4',
-}
-```
+    -- [3] Modo 'youtube': Enlace o ID de YouTube
+    Youtube = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 
-### 3. Enlace o ID de YouTube:
-Pega el enlace completo o solo el ID del vídeo:
-
-```lua
-Config.Backgrounds = {
-    Mode   = 'video',
-    Source = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', -- O solo 'dQw4w9WgXcQ'
-}
-```
-
-> ⚠️ **Nota sobre YouTube:** Algunos creadores de YouTube bloquean la reproducción de sus vídeos en sitios web de terceros (*Error 150*). Si te sale el mensaje *"Este video no está disponible"*, es porque el dueño del vídeo desactivó la inserción externa. Te recomendamos usar un archivo local `.mp4`.
-
----
-
-### 4. Carrusel de imágenes (Slideshow):
-
-```lua
-Config.Backgrounds = {
-    Mode              = 'slideshow',
-    SlideshowInterval = 6500,
-    Images            = {
+    -- [4] Modo 'images': Carrusel de imágenes
+    Images = {
         'assets/images/fondo1.png',
         'https://miservidor.com/fondo2.jpg',
     },
+    SlideshowInterval = 6500,
 }
 ```
+
+> ⚡ **Recomendación:** `local_video` ofrece la mayor fluidez y calidad de imagen a 60 FPS, sin depender de la conexión a internet ni de bloqueos de YouTube.
     Images            = {
         'assets/images/fondo1.png',
         'https://tuservidor.com/fondo2.jpg',
