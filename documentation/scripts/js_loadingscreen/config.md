@@ -42,14 +42,26 @@ Config.Background = {
     -- Options: 'video' | 'images'
     Mode = 'video',
 
-    -- [Mode: 'video'] Local video file path inside web/ folder
-    Video = 'assets/video/video.mp4',
+    -- [Mode: 'video'] Enable video sound:
+    -- true  -> Plays audio directly from video; bottom player controls volume/mute/pause.
+    -- false -> Keeps video muted so Config.Audio playlist plays instead.
+    EnableAudio = true,
 
-    -- [Mode: 'video'] Enable video audio:
-    -- true  -> Plays audio directly from the video. Bottom player controls volume/mute/pause.
-    --          The background music playlist is disabled automatically to avoid audio clashes.
-    -- false -> Keeps the video muted so the Config.Audio playlist plays instead.
-    EnableAudio = false,
+    -- [Mode: 'video'] Video Playlist: Multiple local videos with Title and Author
+    -- Video files should be placed inside web/assets/video/
+    -- Use the Previous / Next buttons to switch videos in real time!
+    Videos = {
+        {
+            Title  = 'Los Santos Sunset',
+            Author = 'Juguito Studio',
+            File   = 'assets/video/video.mp4',
+        },
+        {
+            Title  = 'Vinewood Hills Night',
+            Author = 'Rockstar Editor',
+            File   = 'assets/video/video2.mp4',
+        },
+    },
 
     -- [Mode: 'images'] Image slideshow list (local paths or external URLs)
     Images = {
