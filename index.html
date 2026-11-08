@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>JuguitoStudio — Documentación Oficial</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Portal oficial de documentación de recursos FiveM de JuguitoStudio. Guías de instalación, configuración y arquitectura multi-framework.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Docsify Theme: Dark / Elegant -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+
+  <style>
+    :root {
+      /* JuguitoStudio Color Palette */
+      --base-font-family: 'Inter', system-ui, sans-serif;
+      --code-font-family: 'JetBrains Mono', monospace;
+      
+      --theme-color: #5b7cff;
+      --theme-color-alt: #7b97ff;
+      
+      --base-background-color: #0d0f14;
+      --sidebar-background: #12151c;
+      --sidebar-border-color: rgba(255, 255, 255, 0.06);
+      --sidebar-name-color: #f0f2f8;
+      
+      --content-max-width: 900px;
+      
+      --code-theme-background: #161920;
+      --code-theme-text: #f0f2f8;
+      --code-inline-background: rgba(91, 124, 255, 0.12);
+      --code-inline-color: #7b97ff;
+      
+      --blockquote-background: rgba(91, 124, 255, 0.08);
+      --blockquote-border-color: #5b7cff;
+      
+      --link-color: #5b7cff;
+      --link-color-hover: #7b97ff;
+      
+      --table-cell-border-color: rgba(255, 255, 255, 0.08);
+      --table-row-odd-background: rgba(255, 255, 255, 0.02);
+    }
+    
+    .sidebar {
+      border-right: 1px solid var(--sidebar-border-color);
+    }
+    
+    .app-name-link img {
+      width: 44px;
+      margin-bottom: 8px;
+    }
+
+    .markdown-section pre {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-blue { background: rgba(91, 124, 255, 0.18); color: #7b97ff; border: 1px solid rgba(91, 124, 255, 0.3); }
+    .badge-green { background: rgba(52, 211, 153, 0.18); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3); }
+  </style>
+</head>
+<body>
+  <div id="app">Cargando documentación de JuguitoStudio...</div>
+  
+  <script>
+    window.$docsify = {
+      name: 'JuguitoStudio Docs',
+      logo: 'assets/logo.png',
+      repo: '',
+      loadSidebar: true,
+      loadNavbar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      homepage: 'README.md',
+      
+      // Full Text Search
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Buscar en la documentación...',
+        noData: 'No se encontraron resultados',
+        depth: 4
+      },
+
+      // Copy Code
+      copyCode: {
+        buttonText: 'Copiar',
+        errorText: 'Error',
+        successText: '¡Copiado!'
+      },
+
+      // Pagination
+      pagination: {
+        previousText: 'Anterior',
+        nextText: 'Siguiente',
+        crossChapter: true
+      }
+    }
+  </script>
+
+  <!-- Docsify Core -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-lua.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>

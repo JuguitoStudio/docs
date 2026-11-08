@@ -1,0 +1,4 @@
+- [Inicio](/)
+- [Scripts](/scripts/js_loadingscreen/README.md)
+- [Discord](https://discord.gg/juguito)
+- [Tienda Tebex](https://juguito.tebex.io)
