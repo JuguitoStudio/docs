@@ -4,8 +4,8 @@ Repositorio oficial de documentación para los recursos FiveM de **JuguitoStudio
 
 ---
 
-- 🌐 **Documentación en vivo:** [https://docs.juguito.studio](https://docs.juguito.studio)
-- 🎮 **Discord Oficial:** [discord.gg/juguito](https://discord.gg/juguito)
-- 🛒 **Tienda Tebex:** [juguito.tebex.io](https://juguito.tebex.io)
+- 🌐 **Documentación en vivo:** [https://juguitostudio.gitbook.io/docs/](https://juguitostudio.gitbook.io/docs/)
+- 🎮 **Discord Oficial:** [discord.gg/zXMupaGSRj](https://discord.gg/zXMupaGSRj)
+- 🛒 **Tienda Tebex:** [juguitostudio.tebex.store](https://juguitostudio.tebex.store)
 
 > 📌 **Nota:** El contenido editable se encuentra dentro del directorio [`documentation/`](./documentation/).

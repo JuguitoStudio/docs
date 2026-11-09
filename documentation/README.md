@@ -26,7 +26,7 @@ Todos los scripts de JuguitoStudio han sido construidos bajo estrictos principio
 
 | Script | Versión | Tipo | Estado |
 |---|---|---|---|
-| [**js_loadingscreen**](scripts/js_loadingscreen/README.md) | `v1.0.0` | Loading Screen / NUI | <span class="badge badge-green">Lanzado</span> |
+| [**js_loadingscreen**](scripts/js_loadingscreen/README.md) | `v1.1.1` | Loading Screen / NUI | <span class="badge badge-green">Lanzado</span> |
 
 ---
 
@@ -34,5 +34,5 @@ Todos los scripts de JuguitoStudio han sido construidos bajo estrictos principio
 
 Si necesitas asistencia con cualquiera de tus compras o deseas sugerir nuevas características:
 
-- 🎮 **Discord Oficial:** [discord.gg/juguito](https://discord.gg/juguito)
-- 🛒 **Tienda Tebex:** [juguito.tebex.io](https://juguito.tebex.io)
+- 🎮 **Discord Oficial:** [discord.gg/zXMupaGSRj](https://discord.gg/zXMupaGSRj)
+- 🛒 **Tienda Tebex:** [juguitostudio.tebex.store](https://juguitostudio.tebex.store)

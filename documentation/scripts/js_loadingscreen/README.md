@@ -6,7 +6,7 @@
 
 ## ✨ Características Principales
 
-- 🎬 **Enfoque Cinematográfico Minimalista:** Centro 100% despejado y libre de desenfoques para lucir vídeos de fondo (YouTube o video local) o carruseles de imágenes en alta definición.
+- 🎬 **Enfoque Cinematográfico Minimalista:** Centro 100% despejado y libre de desenfoques para lucir vídeos locales en alta definición (con soporte de playlist y sonido integrado) o carruseles de imágenes.
 - 📱 **Tarjetas Flotantes a la Derecha:** Al pulsar cualquiera de las pestañas superiores (*Inicio, Reglas, Novedades, Equipo, Teclas*), se despliega una tarjeta acoplada a la derecha que flota suavemente entre el menú superior y los botones inferiores.
 - ⌨️ **Modo Cine (<kbd>H</kbd>):** Atajo para ocultar toda la interfaz y disfrutar del vídeo sin interrupciones.
 - 🎵 **Reproductor de Música con Visualizador:** Lista de reproducción con paso de canciones, pausar/reanudar, control de volumen, silenciador y mini ecualizador procedural reactivo dibujado en Canvas.

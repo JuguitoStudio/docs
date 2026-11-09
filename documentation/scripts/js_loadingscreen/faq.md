@@ -4,10 +4,10 @@ Aquí encontrarás respuesta a las dudas más comunes sobre **js_loadingscreen**
 
 ---
 
-### ¿Por qué mi vídeo de YouTube no se reproduce?
-1. Verifica que hayas puesto `Type = 'video'` en `config.lua` y `web/config.js`.
-2. Asegúrate de poner únicamente el **ID** del vídeo (ejemplo: `dQw4w9WgXcQ`), no el enlace completo.
-3. Algunos vídeos en YouTube tienen restricciones de inserción en sitios web de terceros configuradas por el autor. Prueba con otro vídeo público si la pantalla permanece negra.
+### ¿Por qué mi vídeo no se reproduce o no tiene sonido?
+1. Verifica que hayas configurado `Mode = 'video'` en `config.lua` y `web/config.js`.
+2. Para activar el sonido directo del vídeo, asegúrate de colocar `EnableAudio = true` dentro de `Config.Background`. Si está en `false`, el vídeo permanecerá silenciado y se reproducirá la playlist de canciones de `Config.Audio`.
+3. Comprueba que el archivo de vídeo exista dentro de la carpeta `web/assets/video/` en formato MP4 compatible. Si un vídeo falla, el script saltará automáticamente al siguiente de la lista.
 
 ---
 

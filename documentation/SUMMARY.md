@@ -13,5 +13,5 @@
 * [Preguntas Frecuentes](scripts/js_loadingscreen/faq.md)
 
 ## Enlaces
-* [Discord Oficial](https://discord.gg/juguito)
-* [Tienda Tebex](https://juguito.tebex.io)
+* [Discord Oficial](https://discord.gg/zXMupaGSRj)
+* [Tienda Tebex](https://juguitostudio.tebex.store)

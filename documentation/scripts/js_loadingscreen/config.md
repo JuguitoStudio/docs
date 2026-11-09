@@ -53,12 +53,12 @@ Config.Background = {
     Videos = {
         {
             Title  = 'Los Santos Sunset',
-            Author = 'Juguito Studio',
-            File   = 'assets/video/video.mp4',
+            Author = 'Logic Films',
+            File   = 'assets/video/video1.mp4',
         },
         {
-            Title  = 'Vinewood Hills Night',
-            Author = 'Rockstar Editor',
+            Title  = 'HAPPY NEW YEAR!',
+            Author = 'Logic Films',
             File   = 'assets/video/video2.mp4',
         },
     },
@@ -103,6 +103,22 @@ Config.Audio = {
             File   = 'assets/audio/song.mp3',
         },
     },
+}
+```
+
+---
+
+## 🏰 Identidad del Servidor & Enlaces (`Config.Server`)
+
+```lua
+Config.Server = {
+    Name    = 'JUGUITO ROLEPLAY',
+    Slogan  = 'Premium Roleplay Experience & Active Community',
+    Logo    = 'assets/images/logo.png',
+    Discord = 'https://discord.gg/zXMupaGSRj',
+    Website = 'https://juguitostudio.gitbook.io/docs/',
+    Store   = 'https://juguitostudio.tebex.store',
+    Youtube = 'https://youtube.com/@juguitostudio',
 }
 ```
 
